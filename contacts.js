@@ -1,4 +1,4 @@
-// contacts.js
+
 const fsPromises = require('fs').promises;
 const path = require('path');
 
@@ -6,7 +6,7 @@ const path = require('path');
 const contactsPath = path.join(__dirname, 'db', 'contacts.json');
  
 
-// TODO: задокументувати кожну функцію
+
 async function listContacts() {
     try {
         const data =  await fsPromises.readFile(contactsPath, 'utf-8');

@@ -12,7 +12,7 @@ program.parse(process.argv);
 
 const argv = program.opts();
 
-// TODO: рефакторить
+
 function invokeAction({ action, id, name, email, phone }) {
   switch (action) {
     case 'list':
@@ -38,32 +38,3 @@ function invokeAction({ action, id, name, email, phone }) {
 
 invokeAction(argv);
 
-// async function testContacts() {
-   
-//     console.log('List of contacts:');
-//     const allContacts = await contacts.listContacts();
-//     console.log(allContacts);
-  
- 
-//     console.log('Adding a new contact:');
-//     const newContact = await contacts.addContact('John Doe', 'john@example.com', '123-456-7890');
-//     console.log('New contact:', newContact);
-  
-    
-//     console.log('Getting contact by ID:');
-//     const contactById = await contacts.getContactById(newContact.id);
-//     console.log(contactById);
-  
- 
-//     console.log('Removing contact by ID:');
-//     const removedContact = await contacts.removeContact(newContact.id);
-//     console.log('Removed contact:', removedContact);
-  
-  
-//     console.log('List of contacts after removal:');
-//     const updatedContacts = await contacts.listContacts();
-//     console.log(updatedContacts);
-//   }
-  
-
-//   testContacts();
