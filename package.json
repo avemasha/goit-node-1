@@ -1,0 +1,27 @@
+{
+  "name": "pet-app",
+  "version": "1.0.0",
+  "description": "my first node proj",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/avemasha/goit-node-1.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/avemasha/goit-node-1/issues"
+  },
+  "homepage": "https://github.com/avemasha/goit-node-1#readme",
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  },
+  "dependencies": {
+    "commander": "^11.1.0"
+  }
+}
